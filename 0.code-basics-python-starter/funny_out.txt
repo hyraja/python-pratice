@@ -1,0 +1,23 @@
+Kathir : Good morning! Madam.
+word count: 5
+word count: 1Head Mistress : Good morning. Sit down. What do you want?
+word count: 11
+word count: 1Kathir : I want admission into Sixth Standard.
+word count: 8
+word count: 1Head Mistress : Where did you study last year?
+word count: 9
+word count: 1Kathir : I studied in Tirumangalam.
+word count: 6
+word count: 1Head Mistress : Then why do you want admission here?
+word count: 10
+word count: 1Kathir : My father has been transferred to Madurai Branch.
+word count: 10
+word count: 1Head Mistress : What is your father?
+word count: 7
+word count: 1Kathir : He is a Bank Officer.
+word count: 7
+word count: 1Head Mistress : Where is he?
+word count: 6
+word count: 1Kathir : He is seated there. Shall I call him?
+word count: 10
+word count: 1Head Mistress : Fill in this application form and come in the afternoon.word count: 13
