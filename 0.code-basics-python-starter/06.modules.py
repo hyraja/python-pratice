@@ -30,5 +30,5 @@ Mo Tu We Th Fr Sa Su
 print(calendar.isleap(2020))  # True
 
 ############################## sys module ##############################
-# if you want to ser path of your current location
+# if you want to set path of your current location
 sys.path.append('D:\Workspace\pratice@Python')

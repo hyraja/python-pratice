@@ -5,7 +5,7 @@
 # 4. Tuples
 # ---------------------------------------------------
 
-# Dictionary allows to store vakue through key and value pair.
+# Dictionary allows to store value through key and value pair.
 # in dictionary order doesn't matter.
 # ex: telephone books
 
