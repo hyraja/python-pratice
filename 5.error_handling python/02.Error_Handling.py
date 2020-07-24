@@ -24,4 +24,4 @@ while True:  # it is use for infinity loop.
     else:
         print('Thank you')
         break
-''' if 2 valueerror in except block  available, python only take 1st one .
+''' if 2 valueerror in except block  available, python only take 1st one .'''

@@ -1,6 +1,11 @@
 # Generators in python.
 
 
+''' 
+Generator functions allow you to declare a function that behaves like an iterator. 
+They allow programmers to make an iterator in a fast, easy, and clean way. ...
+ An iterator is an object that can be iterated (looped) upon '''
+
 ''' generators allow us to generate sequence of value over time. '''
 
 # ex:
