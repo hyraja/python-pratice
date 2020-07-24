@@ -77,3 +77,11 @@ print(next(g))  # 6  4th 3*2 = 6
 
 ''' yield pause the function and only remember the most recent one value 
     and next() gives the next iterables '''
+
+'''
+In summary…
+Generators allow you to create iterators in a very pythonic manner.
+Iterators allow lazy evaluation, only generating the next element of an iterable object when requested. This is useful for very large data sets.
+Iterators and generators can only be iterated over once.
+Generator Functions are better than Iterators.
+Generator Expressions are better than Iterators (for simple cases only). '''
