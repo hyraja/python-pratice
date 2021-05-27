@@ -1,0 +1,10 @@
+python important notes:
+-----------------------
+
+1. check python version
+--> open cmd and type  # python --version or # python -V
+
+2. find where the installation(python) is located
+--> open cmd and type # where.exe python
+
+3.
