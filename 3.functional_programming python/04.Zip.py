@@ -7,14 +7,6 @@ your_list = [10, 20, 30]
 their_list = (5, 80, 98)
 
 
-def multiply_by2(item):
-    return item*2
-
-
-def only_odd(item):
-    return item % 2 != 0
-
-
 print(list(zip(my_list, your_list)))  # [(1, 10), (2, 20), (3, 30)]
 
 print(list(zip(my_list, your_list, their_list)))
