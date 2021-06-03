@@ -10,9 +10,9 @@ from time import time
 
 def my_decorator(func):
     def wrap_func(greeting):
-        print("$$$$$$$$$$$$$$$$")
+        print("$"*20)
         func(greeting)
-        print("$$$$$$$$$$$$$$$$")
+        print("$"*20)
 
     return wrap_func
 
