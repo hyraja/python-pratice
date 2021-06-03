@@ -9,21 +9,6 @@
 # syntax---> lambda param: action(param)
 from functools import reduce
 my_list = [1, 2, 3]
-
-
-# def multiply_by2(item):  ''' we want to replace this function with a single use function that is 'lambda' used in below
-#     return item*2
-
-
-# def only_odd(item): we use lambda instead of this function
-#     return item % 2 != 0
-
-
-# def accumulator(acc, item): we use lambda for this functions
-#     print(acc, item)
-#     return acc+item
-
-
 print(list(map(lambda item: item*2, my_list)))  # [2,4,6]
 print(my_list)  # [1,2,3]
 ''' lambda is an one time run anonymus function so you donot
