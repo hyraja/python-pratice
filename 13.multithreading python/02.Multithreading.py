@@ -128,8 +128,8 @@ print(t1.setDaemon(True))  # it gives error bcz thread already start
 # ====================================================================
 # Synchronization
 # ====================================================================
-# if mu;tiple threads are executing simultaneously using same class/method  there
-# should be chance of data inconsistency problem ,
+# if multiple threads are executing simultaneously using same class/method  there
+# should be chance of data inconsistency problem,
 # to overcome this problem synchronization comes in picture
 
 ''' in Synchronization the threads will be exeecuted one by one so that
