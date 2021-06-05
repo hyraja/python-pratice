@@ -57,7 +57,7 @@ and also uses separete memory heap is called process based multitasking or multi
 # example :
 ''' while typing python program in the editor we can listen mp3 audio song
 from the same system . at the same time we can download a file from internet 
-All these tasks are executing simmultaneous;y and independent of each other 
+All these tasks are executing simmultaneously and independent of each other 
 Hence this is process based multitaskng. '''
 
 
