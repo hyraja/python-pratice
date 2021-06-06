@@ -4,7 +4,7 @@
 # The main propose of constructor is to declare and initialize instance variable.
 # per object constructor would be executed only once.
 # constructor can take atleast one argument (atleast 'self')
-# constructor is optional and if we are not providing any constructor python will pprovide default constructor.
+# constructor is optional and if we are not providing any constructor python will provide default constructor.
 
 
 class Playercharacter:
