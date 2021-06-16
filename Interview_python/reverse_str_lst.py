@@ -26,3 +26,8 @@
 #   # dasarpajar
 # s = 'rajaprasad'
 # print(reverse(s))
+
+# method 4(using reverse method)
+s = [1, 2, 34, 67, 10, 9]
+s.reverse()
+print(s)  # [9, 10, 67, 34, 2, 1]
