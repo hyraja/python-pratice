@@ -6,11 +6,11 @@ In the end, Django ORM will convert all operations into SQL statements.
 '''
 
 # we check alll our orm output here (i.e shell)
-# to open console follow the below steps
+# to open shell follow the below steps
 # go to inside django project where manage.py file exists and type the command as
-# py manage.py console
+# py manage.py shell
 
-# Let’s define the sample model Blog. and then we can test it on console
+# Let’s define the sample model Blog. and then we can test it on shell
 # class Blog(models.Model):
 #     firstname = models.charfield(max_length=20)
 #     lastname = models.charfield(max_length=20)
@@ -20,7 +20,7 @@ In the end, Django ORM will convert all operations into SQL statements.
 #     def __str__(self) -> str:
 #         return self.title
 
-# our database model is ready we can start operation with it using console
+# our database model is ready we can start operation with it using shell
 
 # What is a QuerySet?
 # A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read
