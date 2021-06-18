@@ -5,7 +5,7 @@ The Django ORM is an abstraction layer that allows us to play with the database.
 In the end, Django ORM will convert all operations into SQL statements. 
 '''
 
-# we check alll our orm output here (i.e console)
+# we check alll our orm output here (i.e shell)
 # to open console follow the below steps
 # go to inside django project where manage.py file exists and type the command as
 # py manage.py console
