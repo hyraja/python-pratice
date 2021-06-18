@@ -27,7 +27,7 @@ In the end, Django ORM will convert all operations into SQL statements.
 # the data from the database, filter it and order it.
 
 # It's easiest to learn by example. Let's try this, shall we?
-# in django most of the ORM output format will be Queryset
+# in django most of the ORM output format will be in Queryset
 
 
 # ----------------------------------------------------#
