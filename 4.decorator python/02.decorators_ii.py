@@ -4,51 +4,50 @@
 # to the wrap_function as *args,**kwarrgs  and unpack with using func(*args,**kwargs)
 # so we can give multiple parameter to our hello() function.
 
-
 from time import time
 
 
-def my_decorator(func):
-    def wrap_func(greeting):
-        print("$"*20)
-        func(greeting)
-        print("$"*20)
+# def my_decorator(func):
+#     def wrap_func(greeting):
+#         print("$"*20)
+#         func(greeting)
+#         print("$"*20)
 
-    return wrap_func
-
-
-@my_decorator
-def hello(greeting):  # if we want to pas an arguments
-    print(greeting)
+#     return wrap_func
 
 
-hello("hiii")
-'''
-$$$$$$$$$$$$$$$$
-hiii
-$$$$$$$$$$$$$$$$
-'''  # we pass an argumet in our hello() function, underneth python interpreter
-# call this way 'a = my_decorator(hello); a("hii")'
-''' when we add multiple parameter to our function ,we need to provide
-    multiple parameter in wrapper function so it is very haptic thats why we add
-    *args and **kwargs inside wrapper function and also inside func()
-'''
+# @my_decorator
+# def hello(greeting):  # if we want to pas an arguments
+#     print(greeting)
 
 
-def my_decorator2(func):
-    def wrap_func(*args, **kwargs):
+# hello("hiii")
+# '''
+# $$$$$$$$$$$$$$$$
+# hiii
+# $$$$$$$$$$$$$$$$
+# '''  # we pass an argumet in our hello() function, underneth python interpreter
+# # call this way 'a = my_decorator(hello); a("hii")'
+# ''' when we add multiple parameter to our function ,we need to provide
+#     multiple parameter in wrapper function so it is very haptic thats why we add
+#     *args and **kwargs inside wrapper function and also inside func()
+# '''
 
-        func(*args, **kwargs)
 
-    return wrap_func
+# def my_decorator2(func):
+#     def wrap_func(*args, **kwargs):
+
+#         func(*args, **kwargs)
+
+#     return wrap_func
 
 
-@my_decorator2
-def hello2(greeting, emoji=':('):  # if we want to pass multiple arguments
-    print(greeting, emoji)
+# @my_decorator2
+# def hello2(greeting, emoji=':('):  # if we want to pass multiple arguments
+#     print(greeting, emoji)
 
 
-hello2("hiii")  # hiii :(
+# hello2("hiii")  # hiii :(
 
 
 # ====================================================================================
@@ -69,11 +68,14 @@ def performance(fn):
 
 @performance
 def long_time():
-    for i in range(100000000):
+    for i in range(10):
         i*5
+        # yield i*5
 
 
 long_time()  # took 0.010499954223632812 s
 ''' using the @performance decorator i can meausure the time, function need to fnish
     and also measure in any function.
 '''
+# for x in long_time():
+#     print(x)
