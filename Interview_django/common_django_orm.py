@@ -63,12 +63,22 @@
 # >>> Blog.objects.filter(city__endswith='on').values('id','city')
 # <QuerySet [{'id': 2, 'city': 'london'}]>
 
+''' count objects '''
+# django orm uses count() to count all objects
+# >> > Blog.objects.count()
+# 5
+
+# # Total number of books with publisher=BaloneyPress
+# (name is one field of publisher model so we can call it by __name )
+# >>> Book.objects.filter(publisher__name='BaloneyPress').count()
+# 73
+
 '''
 Relational operators
 gt -Greater than.
 gte -Greater than or equal to.
 lt -Less than.
-lte -Less than or equal to. 
+lte -Less than or equal to.
 '''
 
 # >>> Blog.objects.filter(age__gt=30)
@@ -91,3 +101,64 @@ lte -Less than or equal to.
 
 # >>> Blog.objects.values('firstname')
 # <QuerySet [{'firstname': 'rajaprasad'}, {'firstname': 'chris'}, {'firstname': 'sample'}, {'firstname': 'sample'}, {'firstname': 'sample'}]>
+
+''' SQL ‘IN’ with Django ORM '''
+# ‘__in’ is used to filter on multiple values.
+# >>> Blog.objects.filter(id__in = [1,2,3])
+# <QuerySet [<Blog: rajaprasad>, <Blog: chris>, <Blog: sample>]>
+
+''' exclude() '''
+# Excludes objects from the queryset which match with the lookup parameters.
+# >>> Blog.objects.exclude(id=1)
+# <QuerySet [<Blog: chris>, <Blog: sample>, <Blog: sample>, <Blog: sample>]>
+
+''' Rename objects like ‘As’ in the SQL '''
+# The extra() method is used to rename columns in the ORM.
+
+# >>> Blog.objects.extra(select={ 'Firstname':'firstname','Lastname':'lastname'}).values('Firstname','Lastname')
+# <QuerySet [{'Firstname': 'rajaprasad', 'Lastname': 'paikaray'}, {'Firstname': 'chris', 'Lastname': 'madams'},
+#   {'Firstname': 'sample', 'Lastname': '1'}, {'Firstname': 'sample', 'Lastname': '2'},
+#   {'Firstname': 'sample', 'Lastname': '3'}]>
+# i've renamed firstname to Firstname and lastname to Lastname
+
+''' Group By and Order By '''
+# The aggregate() function is used to perform aggregation operations like sum, average, min, max, etc.
+
+# >>> from django.db.models import Avg,Min,Max,Sum
+# >>> Blog.objects.aggregate(Sum('age'))
+# {'age__sum': 139}
+
+# >>> Blog.objects.aggregate(Avg('age'))
+# {'age__avg': 27.8}
+
+# >>> Blog.objects.aggregate(Min('age'))
+# {'age__min': 20}
+# >>> Blog.objects.all().aggregate(Min('age'))
+# {'age__min': 20}
+
+# >>> Blog.objects.aggregate(Max('age'))
+# {'age__max': 40}
+
+''' The aggregate() function works on the whole dataset only.
+ Use annotate() instead of aggregate() if you want an average age group by city. '''
+# >>> Blog.objects.values('city').annotate(Sum('age'))
+# <QuerySet [{'city': 'Bengaluru', 'age__sum': 24}, {'city': 'city1', 'age__sum': 20},
+# {'city': 'city2', 'age__sum': 25}, {'city': 'city3', 'age__sum': 30}, {'city': 'london', 'age__sum': 40}]>
+
+
+''' order_by '''
+# >>> Blog.objects.values('city').annotate(total = Sum('age')).order_by('-total')
+# <QuerySet [{'city': 'london', 'total': 40}, {'city': 'city3', 'total': 30},
+# {'city': 'city2', 'total': 25}, {'city': 'Bengaluru', 'total': 24}, {'city': 'city1', 'total': 20}]>
+# i use total to rename the result of annotate  and order it in reverse method
+
+# >>> Blog.objects.values('city').annotate(total = Sum('age')).order_by('total')
+# <QuerySet [{'city': 'city1', 'total': 20}, {'city': 'Bengaluru', 'total': 24},
+# {'city': 'city2', 'total': 25}, {'city': 'city3', 'total': 30}, {'city': 'london', 'total': 40}]>
+
+''' Having clause using Filter() '''
+# Usually, in the database, we use the ‘HAVING’ clause with the group by queries. In the Django, we can use filter() function
+
+# >>> Blog.objects.values('city').annotate(total = Sum('age')).filter(total__gt = 20).order_by('-total')
+# <QuerySet [{'city': 'london', 'total': 40}, {'city': 'city3', 'total': 30}, {'city': 'city2', 'total': 25},
+# {'city': 'Bengaluru', 'total': 24}]>
