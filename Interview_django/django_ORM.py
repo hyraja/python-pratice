@@ -31,8 +31,8 @@ In the end, Django ORM will convert all operations into SQL statements.
 
 
 # ----------------------------------------------------#
-# start our console after import the model field present on inside ourapp(application) like this
-''' importing Blog from from app model'''
+# start our shell after import the model field present on inside ourapp(application) like this
+''' importing Blog from app model'''
 # from app.models import Blog
 
 # ---------------------------------
