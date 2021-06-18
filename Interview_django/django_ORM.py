@@ -72,7 +72,7 @@ In the end, Django ORM will convert all operations into SQL statements.
 # >>> Blog.objects.filter(firstname='rajaprasad')
 # <QuerySet [<Blog: rajaprasad>]>
 
-# contains acts as sql like
+''' __contains acts as sql like '''
 # >>> Blog.objects.filter(firstname__contains='raja')
 # <QuerySet [<Blog: rajaprasad>]>
 
