@@ -121,7 +121,7 @@ lte -Less than or equal to.
 #   {'Firstname': 'sample', 'Lastname': '3'}]>
 # i've renamed firstname to Firstname and lastname to Lastname
 
-''' Group By and Order By '''
+''' aggregate() '''
 # The aggregate() function is used to perform aggregation operations like sum, average, min, max, etc.
 
 # >>> from django.db.models import Avg,Min,Max,Sum
