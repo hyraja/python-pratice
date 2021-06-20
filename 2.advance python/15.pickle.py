@@ -1,8 +1,8 @@
 
 # pickling and unpickling.
 
-''' the process of writting state of objects to the file is called pickling '''
-''' the process of reading state of objects from the file is called unpickling. '''
+''' the process of writting state of objects to the file is called pickling or serialize the object with binary format '''
+''' the process of reading state of objects from the file is called unpickling or deserialize the object from binary format to object. '''
 # pickle module contains dump() to perform pickling.
 # pickle module contains load() to perform unpickling.
 # ex:
