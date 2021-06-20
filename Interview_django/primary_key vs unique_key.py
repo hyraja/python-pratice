@@ -25,9 +25,9 @@ in the unique constraint.
 
 Key Differences Between Primary key and Unique key:
 
-Primary key will not accept NULL values whereas Unique key can accept one NULL value.
-A table can have only primary key whereas there can be multiple unique key on a table.
-A Clustered index automatically created when a primary key is defined whereas Unique key generates the non-clustered index
-that's why primary key is firster than unique key
+1. Primary key will not accept NULL values whereas Unique key can accept one NULL value.
+2. A table can have only primary key whereas there can be multiple unique key on a table.
+3. A Clustered index automatically created when a primary key is defined whereas Unique key generates the non-clustered index
+that's why primary key is faster than unique key.
 
 '''
