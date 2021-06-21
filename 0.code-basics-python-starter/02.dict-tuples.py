@@ -39,7 +39,7 @@ print(d)  # {}
 
 ########################################## Tuples #########################
 # tuples is a list of value grouped together.
-#  tuples all values are different menaing(heterogeneous)
+#  tuples all values are different meaning(heterogeneous)
 # ex: point=(4,5)  4 is x coordinate and 5 is y coordiante.
 # ex2: adress=("murgeshpallaya","bengaluru",560017)
 # tuples are immutable.
