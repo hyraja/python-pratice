@@ -13,7 +13,7 @@
 # =======================================================================
 ''' execution of several task simultaneously where each task is a separate
 independent part  of same program  is called muti threading based multitasking
-and eaach independent part is called Thread. '''
+and each independent part is called Thread. '''
 
 # example of multithreading:
 ''' 
