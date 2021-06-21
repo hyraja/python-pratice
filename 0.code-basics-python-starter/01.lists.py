@@ -8,4 +8,4 @@
 s = [10000, 20000, 40000]
 print(s)  # [10000, 20000, 40000]
 s[0] = 80000
-print(s)  # [80000, 20000, 40000] it support sitem assignments.
+print(s)  # [80000, 20000, 40000] it supports item assignments.
