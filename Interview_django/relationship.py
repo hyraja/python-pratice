@@ -46,7 +46,7 @@ id	name
 '''
 id	name	language_id
 1	Django	1
-2	Flask	1
+2	Flask	   1
 3	bottle	1
 '''
 
@@ -64,9 +64,9 @@ id	name	language_id
 '''
 id	name                 # id	name	language_id
 1	Python               # 1	Django	1
-2	Java                 # 2	Flask	1
-'''                      # 3	bottle	1
-'''                      # 4	Spring	2 '''
+2	Java                 # 2	Flask 	1
+'''                     # 3	bottle	1
+'''                     # 4	Spring	2 '''
 
 # spring framework's language_id is 2 which is referencing the java language id(2) from the language table.
 
