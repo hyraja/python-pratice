@@ -14,11 +14,11 @@
 # === > Data in the User table
 -------------------------------------------
 |id | firstname | lastname | age | city  |
-|1  | rajaprasad | paikaray  | 24  | bengaluru|
-|2  | chris      | madams    | 40  | london|
-|3  | sample     | 1         | 20  | city1 |
-|4  | sample     | 2         | 25  | city2 |
-|5  | sample     | 3         | 30  | city3 |
+|1  | rajaprasad | paikaray| 24  | bengaluru|
+|2  | chris      | madams  | 40  | london|
+|3  | sample     | 1       | 20  | city1 |
+|4  | sample     | 2       | 25  | city2 |
+|5  | sample     | 3       | 30  | city3 |
 -------------------------------------------
 '''
 
