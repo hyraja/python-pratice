@@ -45,3 +45,7 @@
 # duplicate_dict = Counter(mylist)
 # print(duplicate_dict)  # Counter({1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 43: 1})
 # print(duplicate_dict[1]) # 2
+
+
+# s = 'suresssh'
+# print(s.count('s'))#4
