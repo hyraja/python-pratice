@@ -32,3 +32,11 @@ h = 'Hello$world$'
 x = h.split('$')
 y = x[0] + '_' + x[1]
 print(y)
+# Hello_world
+
+#  small a is not equal to capital A
+print(ord('a'))  # 97
+print(ord('A'))  # 65
+
+print(chr(97))  # a
+print(chr(65))  # A
