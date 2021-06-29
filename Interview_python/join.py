@@ -31,4 +31,5 @@ Type Error: If the iterable contains any non-string values, it raises a TypeErro
 list1 = ['g', 'e', 'e', 'k', 's']
 print("".join(list1))  # geeks
 print(' '.join(list1))  # g e e k s
+print(' '.join([i for i in list1]))  # g e e k s
 print(' - '.join(list1))  # g - e - e - k - s
