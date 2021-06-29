@@ -35,11 +35,11 @@ wizard1 = Wizard('merlin', 50)
 archer1 = Archer('robin', 500)
 # print(wizard1.sign_in())  # logged in
 wizard1.attack()  # attacking with power of 50
-archer1.attack()  # attacking with arrow of : 500
+archer1.attack()  # Archer attacking with arrow of : 500
 
 # Both wizard class and archer class are access of different methods
 # and also both having access of sigh_in method so that is the power of inheritance
-archer1.sign_in()  # both accessing siign_in method
+archer1.sign_in()  # both accessing sign_in method
 wizard1.sign_in()
 
 
