@@ -49,3 +49,9 @@
 
 # s = 'suresssh'
 # print(s.count('s'))#4
+
+
+# mylist = [1, 2, 3, 4, 1, 2, 3, 4, 5, 6]
+# newlist = []
+# [newlist.append(i) for i in mylist if mylist.count(i) > 1 if i not in newlist]
+# print(newlist) # [1, 2, 3, 4]
