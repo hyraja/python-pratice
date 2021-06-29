@@ -55,3 +55,8 @@
 # newlist = []
 # [newlist.append(i) for i in mylist if mylist.count(i) > 1 if i not in newlist]
 # print(newlist) # [1, 2, 3, 4]
+
+# or
+some_list = ['a', 'b', 'c', 'b', 'n', 'n']
+duplicates = list(set([x for x in some_list if some_list.count(x) > 1]))
+print(duplicates)  # ['b', 'n']
