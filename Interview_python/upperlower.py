@@ -1,5 +1,5 @@
 # i have an string in this way PrintCapsFirst
-# but we need to get o/p like  this PrintCapsFirst
+# but we need to get o/p like  this PCFrintapsirst
 
 st = 'PrintCapsFirst'
 
