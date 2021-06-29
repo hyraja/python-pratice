@@ -45,7 +45,7 @@
 
 
 # _____________________________________
-# i want toright the string with reverse format
+# i want to write the string with reverse format
 #  'good to look' --- > 'look too good'
 
 s = 'good too look'
