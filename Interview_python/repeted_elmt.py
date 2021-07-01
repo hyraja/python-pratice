@@ -1,7 +1,7 @@
 # Count Repeated element in the list [duplicate]
 
 # method 1 (native)
-# mylist = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 43]
+# mylist = [1, 2, 3, 1, 2, 3]
 # count = 0
 # for i in mylist:
 #     if i == 1:
@@ -57,6 +57,6 @@
 # print(newlist) # [1, 2, 3, 4]
 
 # or
-some_list = ['a', 'b', 'c', 'b', 'n', 'n']
-duplicates = list(set([x for x in some_list if some_list.count(x) > 1]))
-print(duplicates)  # ['b', 'n']
+# some_list = ['a', 'b', 'c', 'b', 'n', 'n']
+# duplicates = list(set([x for x in some_list if some_list.count(x) > 1]))
+# print(duplicates)  # ['b', 'n']
