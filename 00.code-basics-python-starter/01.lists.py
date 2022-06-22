@@ -1,5 +1,6 @@
 # list are python data type to store the data.
 
+
 # List values are similar meaning(type) so it is Homogeneous type.
 # ex :  expenses = [20000,600000,90000] every item is an expenses.
 # ex2. name = ['gopal','hari','tackyons'] every item is an name of person
